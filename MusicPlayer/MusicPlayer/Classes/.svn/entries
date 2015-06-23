@@ -1,0 +1,70 @@
+10
+
+dir
+99
+http://gaoqing@svnchina.com/svn/ttyd/MusicPlayer/MusicPlayer/Classes
+http://gaoqing@svnchina.com/svn/ttyd
+
+
+
+2015-06-16T07:25:47.374464Z
+99
+XTAUEMC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8b3266d6-fc2a-48ff-b86e-b46479586aff
+
+Rank(排行榜)
+dir
+
+Other
+dir
+
+Picture(图片)
+dir
+
+Public（公用类）
+dir
+
+MV
+dir
+
+ThirdParth(第三方)
+dir
+
+Tools(工具)
+dir
+
+Category(分类)
+dir
+
+MusicLibrary(乐库)
+dir
+
+Recommen(推荐)
+dir
+
+Lyrics(歌词)
+dir
+
+DataBase(数据处理)
+dir
+
+MyMusic(我的)
+dir
+
+MusicPlay(音乐播放)
+dir
+

@@ -1,0 +1,159 @@
+//
+//  MyMusicTableViewController.m
+//  MusicPlayer
+//
+//  Created by 张毅 on 15/6/4.
+//  Copyright (c) 2015年 lanou3g. All rights reserved.
+//
+
+#import "MyMusicTableViewController.h"
+#import "LikeTableViewController.h"
+#import "skinViewController.h"
+#import "DataBaseManager.h"
+
+@interface MyMusicTableViewController ()
+
+@end
+
+@implementation MyMusicTableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //注册cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"MyCell"];
+    
+    
+    CGRect rect = [[UIScreen mainScreen]bounds];
+    int x = rect.size.width/7 + 20;
+    int y = 10;
+    int Spacing = rect.size.width *0.12;
+    
+    NSArray *nameArray = @[@"清除缓存",@"我喜欢的",@"本地音乐",@"夜间模式",@"一键换肤",@"建议反馈",@"版本信息"];
+    NSArray *imgArray = @[@"垃圾",@"我喜欢的",@"收藏",@"夜间",@"换肤",@"建议",@"版本"];
+    
+    for (int i = 0; i < 7; i ++) {
+        
+        UILabel *nameLabel = [[UILabel alloc]initWithFrame:CGRectMake(x, y + Spacing *i, rect.size.width/2, 30)];
+        nameLabel.text = nameArray[i];
+        
+        UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(20, y + Spacing *i, 30,30)];
+        UIImage *img = [UIImage imageNamed:imgArray[i]];
+        imgView.image = img;
+        
+        UISwitch *swi = [[UISwitch alloc]initWithFrame:CGRectMake(rect.size.width *0.78,y + Spacing *3 - 3, 40,25)];
+        [swi setOn:NO animated:YES];
+        [swi addTarget:self action:@selector(event:) forControlEvents:UIControlEventValueChanged];
+        
+        [self.view addSubview:swi];
+        [self.view addSubview:imgView];
+        [self.view addSubview:nameLabel];
+    }
+}
+
+- (void)event:(UISwitch *)swi{
+    
+    if ([swi isOn]) {
+        self.view.window.alpha = 0.7;
+    }else{
+        self.view.window.alpha = 1;
+    }
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    return 7;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCell" forIndexPath:indexPath];
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+     CGRect rect = [[UIScreen mainScreen]bounds];
+    return rect.size.width *0.121;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    LikeTableViewController *likeTVC = [LikeTableViewController new];
+    skinViewController *skinVC = [skinViewController new];
+    
+    NSFileManager *fileManager = [[NSFileManager alloc]init];
+    switch (indexPath.row) {
+        case 0:
+            [fileManager removeItemAtPath:@"/Users/lanou3g/Library/Developer/CoreSimulator/Devices/AB201DBE-21DD-430D-A6E9-1A80EA60CD42/data/Containers/Data/Application/32CAB714-171D-41C1-B2F1-2E0C24D6368D/MyMusic.sqlite" error:nil];
+            break;
+        case 1:
+            [self.navigationController pushViewController:likeTVC animated:YES];
+            break;
+        case 4:
+            [self.navigationController pushViewController:skinVC animated:YES];
+        default:
+            break;
+    }
+  }
+
+/*
+// Override to support conditional editing of the table view.
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+*/
+
+/*
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    }   
+}
+*/
+
+/*
+// Override to support rearranging the table view.
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+}
+*/
+
+/*
+// Override to support conditional rearranging of the table view.
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the item to be re-orderable.
+    return YES;
+}
+*/
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end

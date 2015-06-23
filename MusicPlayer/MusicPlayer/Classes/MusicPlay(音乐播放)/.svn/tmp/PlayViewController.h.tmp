@@ -1,0 +1,32 @@
+//
+//  PlayViewController.h
+//  MusicPlayer
+//
+//  Created by 张毅 on 15/6/2.
+//  Copyright (c) 2015年 lanou3g. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "songList.h"
+@interface PlayViewController : UIViewController
+
+@property (nonatomic, strong)UIButton *playButton;
+@property(nonatomic,strong)UIImageView *imgView;
+@property (nonatomic, strong)UIButton *nextButton;
+@property (nonatomic, strong)UIButton *PrevButton;
+@property (nonatomic, strong)UILabel *elapsedTime;
+@property (nonatomic, strong)UILabel *timeRemaining;
+@property (nonatomic, strong)UISlider *slider;
+<<<<<<< .mine
+
+=======
+@property (nonatomic, assign)BOOL play;
+@property(nonatomic,strong)NSMutableArray *songArray;
+@property(nonatomic,strong)NSMutableDictionary *songDict;
+@property(nonatomic,assign)NSInteger song_num;
+@property(nonatomic,strong)songList *song;
+
+>>>>>>> .r51
+-(void)playMusicWithUrl:(NSString *)url;
+
+@end

@@ -1,0 +1,132 @@
+10
+
+dir
+99
+http://gaoqing@svnchina.com/svn/ttyd/MusicPlayer/MusicPlayer/Classes/MyMusic(%E6%88%91%E7%9A%84)
+http://gaoqing@svnchina.com/svn/ttyd
+
+
+
+2015-06-16T07:25:47.374464Z
+99
+XTAUEMC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8b3266d6-fc2a-48ff-b86e-b46479586aff
+
+版本信息
+dir
+
+MyMusicTableViewController.h
+file
+
+
+
+
+2015-06-13T08:58:20.000000Z
+b1e7eaa43b62e50b3edc4d48fe4b4ba8
+2015-06-13T08:58:20.784700Z
+93
+XTAUEMC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+411
+
+LocalMusic(本地音乐)
+dir
+
+ClearCache(清除缓存)
+dir
+
+Like(我喜欢的)
+dir
+
+ChangeSkin(一键换肤)
+dir
+
+本地音乐
+dir
+
+NightMode(夜间模式)
+dir
+
+夜间模式
+dir
+
+MyMusicTableViewController.m
+file
+
+
+
+
+2015-06-15T15:00:14.000000Z
+329492276f379028e8ec34b5e15d3ddc
+2015-06-16T02:49:01.526391Z
+98
+gaoqing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4923
+
+清除缓存
+dir
+
+一键换肤
+dir
+
+VersionInformation(版本信息)
+dir
+
+我喜欢的
+dir
+

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89
+END
+songList.h
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ttyd/!svn/ver/57/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/songList.h
+END
+CommonDefine.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/ttyd/!svn/ver/95/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/CommonDefine.h
+END
+Wheel.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ttyd/!svn/ver/17/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/Wheel.h
+END
+Song.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/Song.h
+END
+WheelTableViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ttyd/!svn/ver/66/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/WheelTableViewCell.h
+END
+songList.m
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/ttyd/!svn/ver/27/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/songList.m
+END
+Wheel.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/ttyd/!svn/ver/17/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/Wheel.m
+END
+SongListTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/ttyd/!svn/ver/94/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/SongListTableViewController.h
+END
+SongTableViewCell.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/SongTableViewCell.h
+END
+WheelTableViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/ttyd/!svn/ver/94/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/WheelTableViewController.h
+END
+Song.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/ttyd/!svn/ver/50/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/Song.m
+END
+WheelTableViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/ttyd/!svn/ver/87/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/WheelTableViewCell.m
+END
+SongListTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/SongListTableViewController.m
+END
+SongTableViewCell.m
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/SongTableViewCell.m
+END
+WheelTableViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/ttyd/!svn/ver/99/MusicPlayer/MusicPlayer/Classes/Public%EF%BC%88%E5%85%AC%E7%94%A8%E7%B1%BB%EF%BC%89/WheelTableViewController.m
+END
